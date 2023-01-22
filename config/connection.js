@@ -1,5 +1,5 @@
 require('dotenv').config();
-
+const router = require('express').Router();
 const Sequelize = require('sequelize');
 
 const sequelize = process.env
