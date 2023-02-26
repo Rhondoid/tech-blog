@@ -1,6 +1,6 @@
 const router = require('express').Router()
 const { Post } = require('../../models');
-const withAuth = require('../../utils/auth');
+const withAuth = require('../../util/auth');
 
 
 router.post('/', withAuth, async (req, res) => {
@@ -26,7 +26,7 @@ router.post('/', withAuth, async (req, res) => {
       });
 
       if (!postData) {
-        res.status(404).json({ message: 'No project found with this id!' });
+        res.status(404).json({ message: 'No post found with this id!' });
         return;
       }
   
