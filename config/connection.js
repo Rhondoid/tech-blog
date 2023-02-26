@@ -1,7 +1,8 @@
 require('dotenv').config();
-const router = require('express').Router();
+
 const Sequelize = require('sequelize');
 
+// Connection to db for Heroku and local, dialect needs to be explicity supplied
 const sequelize = process.env
   ? new Sequelize(process.env)
   : new Sequelize(
@@ -11,13 +12,12 @@ const sequelize = process.env
       {
         host: 'localhost',
         dialect: 'mysql',
-        // dialectOptions: {
-        //   decimalNumbers: true,
+        dialectOptions: {
+          decimalNumbers: true,
           port:3001
-      },
+        },
         
-      
+      }
     );
-    
 
 module.exports = sequelize;
