@@ -11,10 +11,13 @@ const sequelize = process.env
       {
         host: 'localhost',
         dialect: 'mysql',
-        dialectOptions: {
-          decimalNumbers: true,
-        },
-      }
+        // dialectOptions: {
+        //   decimalNumbers: true,
+          port:3001
+      },
+        
+      
     );
+    
 
 module.exports = sequelize;
