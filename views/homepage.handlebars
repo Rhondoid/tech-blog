@@ -1,22 +1,19 @@
-
-<nav class='navbar pt-5 pb-5 theme-d5'>
-  <a href='/' id='nav-home'>
-    <h1 class='text-inherit flex-initial' id='title'>Tech Blog</h1>
-  </a>
-  <ul>
-     {{#if loggedIn}}
-    <li><a href='/profile' class='flex-initial pr-2.5'id='profile-link'>My Profile</a></li>
-     <li><a href='/login' class='flex-initial pr-2.5'id='nav-logout'>Logout</a></li>
-      {{else}}
-        <a href='/login' class='flex-initial pr-2.5'id='nav-login'>Login</a>
-      {{/if}}
-    </a>
-  </ul>
-</nav>
-
-
-<div class="post-wrapper">
-   {{#each posts as |post|}}
-    {{>postcard post = post}}
-  {{/each}}
+<!-- Loop over each object in the projects array -->
+{{#each post as |post| }}
+<div class="row mb-4 post">
+  <div class="col-md-5">
+    <h2>
+      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+      {{{get_emoji}}}
+      <a href="/post/{{post.id}}">{{post.name}}</a>
+    </h2>
+    
+    <p>Created by {{post.user.name}} on {{format_date post.date_created}}</p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{post.description}}
+    </p>
+  </div>
 </div>
+{{/each}}
