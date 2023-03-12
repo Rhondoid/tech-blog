@@ -13,9 +13,9 @@ const loginFormHandler = async (event) => {
       body: JSON.stringify({ username, password }),
       headers: { 'Content-Type': 'application/json' },
     });
-console.log(response)
+console.log('Rhonda is logged in')
     if (response.ok) {
-      
+     alert('redirecting to profile page') 
       // If successful, redirect the browser to the profile page
       document.location.replace('/profile');
     } else {
