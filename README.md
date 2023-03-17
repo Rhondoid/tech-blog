@@ -16,6 +16,11 @@ At the deployed site you can add a user with username, password and email. Then 
 
 ![image](https://user-images.githubusercontent.com/110504360/222308886-52d08fc0-3576-485d-9682-e44942fea784.png)
 
+![image](https://user-images.githubusercontent.com/110504360/225805546-b5fd6d26-108f-4261-a838-73924ad0822e.png)
+
+![image](https://user-images.githubusercontent.com/110504360/225805559-3c9ae7bd-b9c0-4632-8ead-d49ce567da91.png)
+
+
 
 ## License
 MIT
