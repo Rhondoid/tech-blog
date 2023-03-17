@@ -2,7 +2,16 @@ const router = require('express').Router()
 const { Comment } = require('../../models');
 const withAuth = require('../../util/auth');
 
+router.get('/', (req, res) => {
+  Comment.findAll({})
+    .then(commentData => res.json(commentData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
 router.post('/', withAuth, async (req, res) => {
+  //verifies authentication using session
     try {
       const newComment = await comment.create({
         ...req.body,
