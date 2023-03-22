@@ -1,14 +1,14 @@
-const { Model, DataTypes } = require('sequelize');
-const bcrypt = require('bcrypt');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const bcrypt = require("bcrypt");
+const sequelize = require("../config/connection");
 
 class User extends Model {
   checkPassword(loginPw) {
-    console.log({loginPw})
+    console.log({ loginPw });
     return bcrypt.compareSync(loginPw, this.password);
   }
 }
-//re-deploy 
+//re-deploy
 User.init(
   {
     id: {
@@ -21,14 +21,14 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-   email:{
-    type:DataTypes.STRING,
-    allowNull: false,
-    unique: true,
-    validate: {
-      isEmail: true,
-    }
-   },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+      validate: {
+        isEmail: true,
+      },
+    },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -40,11 +40,14 @@ User.init(
   {
     hooks: {
       beforeCreate: async (newUserData) => {
-        newUserData.password = await bcrypt.hash(newUserData.password, 5);
+        newUserData.password = await bcrypt.hash(newUserData.password, 15);
         return newUserData;
       },
       beforeUpdate: async (updatedUserData) => {
-        updatedUserData.password = await bcrypt.hash(updatedUserData.password, 5);
+        updatedUserData.password = await bcrypt.hash(
+          updatedUserData.password,
+          15
+        );
         return updatedUserData;
       },
     },
@@ -52,7 +55,7 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user',
+    modelName: "user",
   }
 );
 

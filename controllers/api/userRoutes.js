@@ -1,11 +1,12 @@
 const router = require('express').Router()
 const { User, Post, Comment } = require('../../models');
 
-
+// router.get('/all',(req, res))
 router.get('/', (req, res) => {
   // Access our User model and run .findAll() method
   User.findAll({
-      attributes: { exclude: ['password'] }
+      attributes: { exclude: ['password'] }, 
+      include: [Post]
   })
     .then(userData => res.json(userData))
     .catch(err => {
@@ -93,6 +94,8 @@ router.post('/', async (req, res) => {
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
+      req.session.username = userData.username;
+
       
       res.json({ user: userData, message: 'You are now logged in!' });
     });
