@@ -22,11 +22,14 @@ https://cryptic-hollows-36067.herokuapp.com/profile
 ##Usage
 
 At the deployed site you can add a user with username, password and email. Then view different posts and when they were posted
-![image](https://user-images.githubusercontent.com/110504360/227057810-26edbd44-1400-40c6-b7ac-dc3167e3cbf2.png)
+
 ![image](https://user-images.githubusercontent.com/110504360/227057833-96adeed5-0568-4f54-9ae3-b6c815515f87.png)
+
 ![image](https://user-images.githubusercontent.com/110504360/227057855-e47721cc-a85b-4df2-8ce6-30b568860337.png)
-![image](https://user-images.githubusercontent.com/110504360/227057876-c91eda9b-567b-4e68-9eb0-d24edd739129.png)
+
+
 ![image](https://user-images.githubusercontent.com/110504360/227057898-8ef3b443-b22b-4ebd-85f2-03fbf62c1da1.png)
+
 ![image](https://user-images.githubusercontent.com/110504360/227057921-45c8528f-ecae-4f22-89b6-7e5e927c7307.png)
 
 
