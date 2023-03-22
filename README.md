@@ -17,20 +17,18 @@ This application is a CMS-style blog site where I can post blogs, my thoughts an
 ## Installation
 This application is entirely online.  Just follow the [link](https://https://shielded-cliffs-98741.herokuapp.com/login/) .
 ## Usage
-https://shielded-cliffs-98741.herokuapp.com/login
+https://cryptic-hollows-36067.herokuapp.com/profile
 
 ##Usage
 
 At the deployed site you can add a user with username, password and email. Then view different posts and when they were posted
+![image](https://user-images.githubusercontent.com/110504360/227057810-26edbd44-1400-40c6-b7ac-dc3167e3cbf2.png)
+![image](https://user-images.githubusercontent.com/110504360/227057833-96adeed5-0568-4f54-9ae3-b6c815515f87.png)
+![image](https://user-images.githubusercontent.com/110504360/227057855-e47721cc-a85b-4df2-8ce6-30b568860337.png)
+![image](https://user-images.githubusercontent.com/110504360/227057876-c91eda9b-567b-4e68-9eb0-d24edd739129.png)
+![image](https://user-images.githubusercontent.com/110504360/227057898-8ef3b443-b22b-4ebd-85f2-03fbf62c1da1.png)
+![image](https://user-images.githubusercontent.com/110504360/227057921-45c8528f-ecae-4f22-89b6-7e5e927c7307.png)
 
-![image](https://user-images.githubusercontent.com/110504360/225812538-84eeb355-1a14-432a-873c-790968ccfb8f.png)
-
-![image](https://user-images.githubusercontent.com/110504360/225812480-ffd6ded0-7449-488d-babb-93e6960d8e64.png)
-
-
-![image](https://user-images.githubusercontent.com/110504360/225805546-b5fd6d26-108f-4261-a838-73924ad0822e.png)
-
-![image](https://user-images.githubusercontent.com/110504360/225805559-3c9ae7bd-b9c0-4632-8ead-d49ce567da91.png)
 
 
 
